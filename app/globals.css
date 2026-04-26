@@ -77,6 +77,11 @@ body {
   100% { background-position: 200% 0; }
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* Scroll indicator pulse */
 @keyframes pulse-scroll {
   0%, 100% { opacity: 0.4; transform: translateY(0); }
@@ -85,6 +90,15 @@ body {
 
 .scroll-indicator {
   animation: pulse-scroll 2s ease-in-out infinite;
+}
+
+/* Hide scrollbar for carousel */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Package card hover */

@@ -3,8 +3,7 @@
 import { Navbar } from "@/components/ui/Navbar";
 import { LoadingScreen } from "@/components/ui/LoadingScreen";
 import Hero from "@/components/scenes/Hero";
-import Boarding from "@/components/scenes/Boarding";
-import Flight from "@/components/scenes/Flight";
+import JourneyGlobe from "@/components/scenes/JourneyGlobe";
 import Auckland from "@/components/scenes/Auckland";
 import Rotorua from "@/components/scenes/Rotorua";
 import Queenstown from "@/components/scenes/Queenstown";
@@ -23,13 +22,12 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Boarding />
-        <Flight />
+        <JourneyGlobe />
         <Auckland />
         <Rotorua />
+        <Hobbiton />
         <Queenstown />
         <MilfordSound />
-        <Hobbiton />
         <Packages />
         <WhyWingKiwi />
         <HappyGuests />

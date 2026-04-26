@@ -67,15 +67,18 @@ export default function InquiryCTA() {
       ref={sectionRef}
       id="contact"
       className="relative py-24 px-6 md:px-12 lg:px-20 overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(180deg, #0B1D3A 0%, #0F2340 60%, #1A2A44 100%)",
-      }}
     >
+      {/* NZ starry sky / mountains */}
+      <img
+        src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1920&q=80"
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-navy/85" />
       {/* Flying plane SVG */}
       <svg
         ref={planeRef}
-        className="absolute top-12 left-0 w-10 h-10 text-amber opacity-0 pointer-events-none"
+        className="absolute top-12 left-0 z-10 w-10 h-10 text-amber opacity-0 pointer-events-none"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="none"
@@ -88,7 +91,7 @@ export default function InquiryCTA() {
         <path d="M21.5 2.5l-6.5 19-3-8.5-8.5-3 19-6.5z" />
       </svg>
 
-      <div className="max-w-3xl mx-auto text-center">
+      <div className="relative z-10 max-w-3xl mx-auto text-center">
         <h2
           ref={headingRef}
           className="font-display text-4xl md:text-5xl lg:text-6xl text-offwhite mb-4"

@@ -40,11 +40,15 @@ export default function HappyGuests() {
     <section
       ref={sectionRef}
       className="relative py-24 overflow-hidden"
-      style={{
-        background: "linear-gradient(180deg, #0B1D3A 0%, #0F2340 100%)",
-      }}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mb-12">
+      {/* NZ lake background */}
+      <img
+        src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=1920&q=80"
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-navy/90" />
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mb-12">
         <h2
           ref={headingRef}
           className="font-display text-4xl md:text-5xl lg:text-6xl text-center text-offwhite"
@@ -54,7 +58,7 @@ export default function HappyGuests() {
       </div>
 
       {/* Marquee container */}
-      <div className="group relative">
+      <div className="group relative z-10">
         {/* Fade edges */}
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10 bg-gradient-to-r from-navy to-transparent" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10 bg-gradient-to-l from-navy to-transparent" />

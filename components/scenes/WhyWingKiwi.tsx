@@ -113,12 +113,16 @@ export default function WhyWingKiwi() {
     <section
       ref={sectionRef}
       id="why-us"
-      className="relative py-24 px-6 md:px-12 lg:px-20"
-      style={{
-        background: "linear-gradient(180deg, #0F2340 0%, #0B1D3A 100%)",
-      }}
+      className="relative py-24 px-6 md:px-12 lg:px-20 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto">
+      {/* NZ fern forest background */}
+      <img
+        src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1920&q=80"
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-navy/90" />
+      <div className="relative z-10 max-w-7xl mx-auto">
         <h2
           ref={headingRef}
           className="font-display text-4xl md:text-5xl lg:text-6xl text-center text-offwhite mb-16"
